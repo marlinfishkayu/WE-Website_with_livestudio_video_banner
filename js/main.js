@@ -117,7 +117,8 @@ $(".livegame-btn").click(function() {
 
 /*-- side menu live games/ lotteries --*/
 $(".tab-label").click(function() {
-    $(".tab-label").toggleClass("show");
+    $(".tab-label").removeClass("show");
+    $(this).addClass("show");
 });
 
 /*-- hover language menu arrow icon --*/

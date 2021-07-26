@@ -596,12 +596,20 @@
                     
                     <!-- navigation bar end -->
                     <!-- Slider start -->
-                    <div id="slider-area" class="owl-carousel index-carousel owl-lazy"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.1s;">
-                        <video width="100%" height="100%" autoplay muted loop>
-                            <source src="images//video/intro_video.mp4" type="video/mp4">
-                            <source src="images//video/intro_video.mp4" type="video/ogg">
-                          </video>
+                    <div class="video-content">
+                        <div class="video-wrapper">
+                            <video id="bgvid" class="hidden-xs " width="100%" height="100%" autoplay muted loop poster="images/video/video_thumbnail.png">
+                                <source type="video/mp4" data-src="images/video/intro_video.mp4">
+                                <source type="video/ogg" data-src="images/video/intro_video.mp4">
+                            
+                                <!-- <source src="images/video/intro_video.mp4" type="video/mp4">
+                                <source src="images/video/intro_video.mp4" type="video/ogg"> -->
+                                Your browser does not support mp4 videos, change browser
+                            </video>
+                            <!-- <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/579236285?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="intro_video.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> -->
+                        </div>
                     </div>
+                    
                     <!-- <div id="slider-area" class="owl-carousel index-carousel owl-lazy"  data-sal="fade" data-sal-easing="easeInQuart" style="--sal-duration: 0.3s; --sal-delay: 0.1s;">
                         <div class="slide slide-gradient">
                             <a href="Game_LiveGame_Baccarat.html">

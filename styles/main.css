@@ -10390,6 +10390,62 @@ body:lang(SC) #liveStudio .livestudio-sec3 .bottom-deco:after {
   }
 }
 
+.video-wrapper {
+  position: relative;
+  z-index: 0;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0px;
+}
+
+.video-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background: #011b3e;
+  background: -webkit-gradient(linear, left bottom, left top, from(#060B1A), to(rgba(0, 15, 36, 0)));
+  background: linear-gradient(0deg, #060B1A 0%, rgba(0, 15, 36, 0) 100%);
+}
+
+.video-wrapper video {
+  position: absolute;
+  left: 0px;
+  top: -13px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  .video-wrapper {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .video-wrapper {
+    width: auto;
+    height: 100%;
+  }
+}
+
+/* dummy criterion for demo purposes */
+@media screen and (min-width: 300px) {
+  .hidden-xs {
+    display: block;
+  }
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #nav-area .search-form {
     top: 0px;

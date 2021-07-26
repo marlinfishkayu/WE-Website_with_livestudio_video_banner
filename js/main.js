@@ -712,3 +712,22 @@ $(document).ready(function() {
     });
 });
 /*-- What's New Timeline filter function end --*/
+
+
+/*-- Index Hero video  --*/
+$(
+    function() {
+      const bgv = $('#bgvid');
+  
+      if (bgv.is(':visible')) {
+        $('source', bgv).each(
+          function() {
+            const el = $(this);
+            el.attr('src', el.data('src'));
+          }
+        );
+  
+        bgv[0].load();
+      }
+    }
+  )

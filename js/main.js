@@ -519,6 +519,7 @@ $("#EventSlider")
 
 $("#studioCarousel").owlCarousel({
     loop: false,
+    items:1,
     margin: 90,
     center: false,
     responsive: {

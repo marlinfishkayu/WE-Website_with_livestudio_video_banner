@@ -519,8 +519,8 @@ $("#EventSlider")
 
 $("#studioCarousel").owlCarousel({
     loop: false,
-    margin: 10,
-    center: true,
+    margin: 90,
+    center: false,
     responsive: {
         0: {
             items: 2,
@@ -534,13 +534,14 @@ $("#studioCarousel").owlCarousel({
             nav: false,
             slideBy: 1, // <!-- HERE
         },
-        1000: {
+        1200: {
             center: false,
             items: 5,
             navigation: false,
             nav: false,
             autoWidth: true,
             slideBy: 1, // <!-- HERE
+            margin: 10,
         },
     },
 });
@@ -730,4 +731,6 @@ $(
         bgv[0].load();
       }
     }
-  )
+)
+
+  

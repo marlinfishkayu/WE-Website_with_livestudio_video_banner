@@ -6612,8 +6612,7 @@ select.form-control::-ms-expand {
 }
 
 #liveStudio .livestudio-sec1 {
-  padding-top: 2rem;
-  padding-bottom: 150px;
+  padding: 2rem 0;
 }
 
 #liveStudio .showless_btn .active {
@@ -7142,6 +7141,9 @@ select.form-control::-ms-expand {
   #liveStudio .studio-slide-bkg {
     height: 820px;
   }
+  #liveStudio .studio-slide-bkg img {
+    height: auto;
+  }
   #liveStudio .studio-slide-bkg-2 {
     height: 2300px;
   }
@@ -7159,6 +7161,10 @@ select.form-control::-ms-expand {
   }
   #liveStudio .center .studio-img-wrap picture::after {
     background: #060b1a7a;
+  }
+  #liveStudio .livestudio-sec1 {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
   }
   #liveStudio .livestudio-hightlight-wrap .cert-wrap {
     width: 700px;
@@ -7431,6 +7437,10 @@ select.form-control::-ms-expand {
   }
   #liveStudio .room-des:after {
     top: 195px;
+  }
+  #liveStudio .livestudio-sec1 {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
   }
 }
 
